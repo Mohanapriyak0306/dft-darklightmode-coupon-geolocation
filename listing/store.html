@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="store.css"/>
+        <title>Dessert for Two - Dessert for Two</title>
+        <link rel="icon" href="images/favicon.png"/>
+    </head>
+    <body >
+        <header class="navdark">
+            <div class="darklight">
+                <button onclick="darkmode()" class="toggler-darklight"><img src="images/darklightbtn.png" alt="dark-light"></button>
+            </div>
+            <div class="logo" >
+                <a href="../index.html">
+                    <img src="images/regular.png" alt="logo">
+                </a>
+            </div>
+            <div class="navigation">
+                <input type="checkbox" class="toggle-menu">            
+                <div class="hamburger"></div>              
+
+                <ul class="menu">
+                    <div class="logo-siderbar" >
+                        <a href="../index.html">
+                            <img src="images/regular.png" alt="logo">
+                        </a>
+                    </div>
+                    <li><a href="../index.html">Home</a> </li>
+                    <li><a href="./recipes.html">Recipes</a> </li>
+                    <li><a href="./about.html">About</a> </li>
+                    <li><a href="./store.html">Store</a> </li>
+                    <li><a href="./mycookbooks.html">MyCookbooks</a> </li>
+                    <ul class="socialicons" >
+                        <a href="https://www.facebook.com/DessertForTwo" target="_blank" ><img src="images/facebook.png" alt="facebook" style="filter: invert(33%) sepia(98%) saturate(590%) hue-rotate(332deg) brightness(92%) contrast(91%);"> </a>
+                        <a href="https://www.instagram.com/dessertfortwo/" target="_blank" ><img src="images/insta.png" alt="instagram" style="filter: invert(33%) sepia(98%) saturate(590%) hue-rotate(332deg) brightness(92%) contrast(91%);"> </a>
+                        <a href="https://www.pinterest.com/dessertfortwo/_created/" target="_blank" ><img src="images/pinterest.png" alt="pinterest" style="filter: invert(33%) sepia(98%) saturate(590%) hue-rotate(332deg) brightness(92%) contrast(91%);"> </a>
+                    </ul>  
+                </ul>                
+            </div>
+        </header>
+        
+        <!-- carousel -->
+            <div id="dftcarousel" class="carousel slide" data-ride="carousel">
+                <div class="left-control">
+                    <a class="left-carousel-control" href="#dftcarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                </div>
+                <div class="carousel-inner">
+                    <div class="item active">                    
+                        <div class="carousel">
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Breakfast-Category-Image-300x400.jpg" alt="Breakfast" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Breakfast</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Bread-Category-Image-300x400.jpg" alt="Bread" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Bread</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Donuts-Category-Image-300x400.jpg" alt="Donuts" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Donuts</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Muffins-Scones-Category-Image-300x400.jpg" alt="Muffins" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Muffins</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Chocolate-Recipes-Category-Image-300x400.jpg" alt="Chocolate Desserts for Two" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Chocolate Desserts for Two</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Peanut-Butter-recipes-Category-Image-300x400.jpg" alt="Peanut Butter" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Peanut Butter</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Cupcakes-Category-Image-300x400.jpg" alt="Cupcakes" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Cupcakes</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Small-Six-Inch-Cake-Recipes-Category-Image-300x400.jpg" alt="Small Cake Recipes to make 6 Inch cake" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Small Cake Recipes to make 6 Inch cake</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="item ">                    
+                        <div class="carousel">
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Pies-Cobblers-Category-Image-300x400.jpg" alt="Pies and Cobblers" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Pies and Cobblers</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Cookies-and-Bars-Recipes-Category-Image-300x400.jpg" alt="Cookies and Bars" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Small Batch Recipe for Brownies with Cocoa</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Dinners-for-Two-Category-Image-300x400.jpg" alt="Dinners Recipes for Two" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Dinners Recipes for Two</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Pasta-Category-Image-300x400.jpg" alt="Pasta" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Pasta</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Meat-Seafood-Category-Image-300x400.jpg" alt="Meat / Seafood" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Meat / Seafood</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Drinks-Category-Image-300x400.jpg" alt="Drinks for Two" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Drinks for Two</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Egg-White-Recipes-Category-Image-300x400.jpg" alt="Egg White Only" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Egg White Only</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Egg-Yolk-Recipes-Category-Image-300x400.jpg" alt="Egg Yolk Only" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Egg Yolk Only</p>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="item ">                    
+                        <div class="carousel">
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Eggless-Recipes-Category-Image-300x400.jpg" alt="Eggless Recipes" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Eggless Recipes</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/No-Bake-Recipes-Category-Image-300x400.jpg" alt="No Bake" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">No Bake</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Christmas-Recipes-Category-Image-300x400.jpg" alt="Christmas" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Christmas</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Apple-Category-Image-300x400.jpg" alt="Apple Recipes" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Apple Recipes</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Pumpkin-Category-Image-300x400.jpg" alt="Pumpkin" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Pumpkin</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Frozen-Treats-Category-Image-300x400.jpg" alt="Frozen Treats" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Frozen Treats</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Vegan-Category-Image-300x400.jpg" alt="Vegan" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Vegan</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Paleo-Category-Image-300x400.jpg" alt="Paleo" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Paleo</p>
+                            </div>
+                        </div>          
+                    </div>              
+                </div>
+                <div class="right-control">
+                    <a class="right-carousel-control" href="#dftcarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+
+            <!--content  -->
+          <div class="maincontainer">
+            <div class="store">
+              <h1 class="mycookbooksheading">Store</h1>   
+         
+         
+            
+
+            <div class="content-container">
+              <div class="container-ebook">
+
+                <div class="books-container">
+                  <div class="bookcontainer">
+                    <div class="bookimage">
+                      <img src="images/Pumpkin-Ebook-Cover-300x400.jpg" alt="Ebooks"> 
+                    </div>
+                    <div class="bookheading">
+                      <p class="heading-book">Ebooks<span class="count">(3)</span></p>
+                    </div>                    
+                  </div>
+                  <div class="bookcontainer">
+                    <div class="bookimage">
+                      <img src="images/dessert-for-two-cookbook-300x400.jpg" alt="My Cookbooks"> 
+                    </div>
+                    <div class="bookheading">
+                      <p class="heading-book">My Cookbooks<span class="count">(4)</span></p>
+                    </div>                    
+                  </div>
+                  <div class="bookcontainer">
+                    <div class="bookimage">
+                      <img src="images/6-Cup-Muffin-Pan-300x400.jpg" alt="Kitchenware"> 
+                    </div>
+                    <div class="bookheading">
+                      <p class="heading-book">Kitchenware<span class="count">(25)</span></p>
+                    </div>                    
+                  </div>
+
+                </div> 
+
+              </div>
+              <div class="shortdetails-recommended">
+                <div class="shortdetails-container">
+                  <div class="shortmyimage">
+                    <img src="images/HeadShot1200-300x300.jpg" alt="HeadShot" >
+                  </div>
+                  <div class="shortmytext">
+                    <p class="about-shorttext"><span class="hi"> Hi, I'm Christina!</span> I'm the author of 4 cookbooks all about cooking and baking for two. I have scaled down hundreds of recipes into smaller servings so you can enjoy your favorite dishes without the leftovers! Valentine's Day is my favorite holiday.</p>
+
+                    <p>You can also find her at <span><a class="findme" href="https://beanrecipes.com/">BeanRecipes.com</a></span>.</p>
+                    <p class="learnmore"> more about me &#8594</p>
+                  </div>
+                </div>
+                </div>
+                </div>  
+          
+    
+
+
+                <!--footer-->
+                <footer>
+                    <div class="backtotop">
+                    <a class="nav-link " aria-current="page" href="#">&uarr; Back to top</a>
+                    </div>
+                    <div class="privacy-signup">
+                    <div class="ppolicy">
+                        <p >PRIVACY POLICY</p>
+                    </div>
+                    <div class="signup">
+                        <p >SIGN UP! FOR EMAILS AND UPDATES</p>
+                    </div>
+                    <div class="faq">
+                        <p >FAQ</p>
+                    </div>
+                    </div>
+                    <div class="copyright">
+                    <p class="copy">COPYRIGHT © 2022<span class="crdft"> DESSERT FOR TWO</span> </p>
+                    </div>          
+                </footer> 
+                <script src="../index.js"></script>
+                <script>
+                    window.onload = function() {
+                        darklightmode()   
+                    }
+                </script>
+            </body>
+</html>

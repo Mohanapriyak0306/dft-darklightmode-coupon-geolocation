@@ -1,0 +1,856 @@
+body{
+    background-image: linear-gradient(to bottom right,rgb(132, 242, 244),rgb(238, 137, 221));
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    color: rgb(74, 71, 71);
+    font-weight: 400;
+}
+
+header{
+    position: fixed;
+    height: 100px;
+    border-bottom: 1PX solid rgba(128, 128, 128, 0.258);
+    display: flex;
+    width: 100%;
+    padding: 25px;
+    background-image: linear-gradient(to bottom right,rgb(132, 242, 244),rgb(238, 137, 221));
+    z-index:100;
+}
+
+#dftcarousel{
+    /* border: 2px solid blue; */
+    width: 100%;
+}
+.carousel-inner{
+    /* border: 2px solid rgb(111, 6, 118); */
+    width: 98%;
+    font-size: 15px;
+    margin-top: 100PX;
+    background-image: linear-gradient(to bottom right,rgb(132, 242, 244),rgb(238, 137, 221));
+}
+
+.carousel{
+    /* border: 2px solid rgb(14, 111, 172); */
+    display: flex;
+    box-shadow: 0 0  3px rgb(109, 105, 105);
+    font-size: 13px;
+}
+.carousel-recipes{
+    /* border: 2px solid rgb(15, 16, 15); */
+    height: 56px;
+    width: 12%;
+    display: flex;
+    margin: 0.5%;
+}
+
+.right-control,
+.left-control{
+    margin-top: 120px;
+    /* border: 2px solid rgb(179, 28, 189); */
+    width: 1%;
+    height: 40px;
+}
+.left-carousel-control,
+.right-carousel-control{
+    color: gray ;
+    border: 1px solid rgb(189, 190, 190);
+    border-radius: 5px;
+    width: 1%;
+}
+a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(74, 71, 71);
+}
+a:hover{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(74, 71, 71);
+
+}
+.darklight{
+    /* background-color: rgb(192, 9, 9); */
+    padding-top: 9px;
+}
+.toggler-darklight{
+    background-image: linear-gradient(to bottom right,rgb(238, 137, 221),rgb(132, 242, 244));
+    border: none;
+    height: 30px;
+    width:30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.toggler-darklight img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding-top: 3
+    px;
+}
+
+.logo {
+    margin-left: 90px;
+    height:50px;
+    width:150px;
+    /* border: 2px solid rgb(197, 24, 24); */
+}
+.logo img{
+    height:100%;
+    width:100%;
+    /* border: 2px solid rgb(29, 26, 26); */
+
+}    
+.navigation{
+    /* border: 2px solid rgb(185, 31, 185); */
+    width: 75%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+.menu{
+    /* border: 2px solid rgb(33, 63, 154); */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    
+}
+.menu li{
+    list-style-type: none;
+    font-size: 20px;
+}
+.menu li a{
+    color: rgb(74, 67, 67);
+    text-decoration: none;
+    display: block;
+    margin-right: 40px;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.socialicons{
+    margin-left: 5%;
+    /* border: 2px solid rgb(18, 187, 156); */
+    display: flex;
+    margin-left: 5%;
+    width: 30%;
+}    
+.socialicons img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10PX;
+}
+
+
+.hamburger{
+    position: relative;
+    width: 30px;
+    height: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 2;
+    transition: 0.3s;
+    background-color: rgb(28, 27, 27);
+}
+.hamburger:before,
+.hamburger:after{
+    content: "";
+    position: absolute;  
+    height: 4px;
+    right: 0;
+    background-color: rgb(28, 27, 27);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hamburger:before{
+    top: -10px;
+    width: 30px;
+}
+.hamburger:after{
+    top: 10px;
+    width: 30px;
+}
+.toggle-menu{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+.logo-siderbar,
+.hamburger,
+.toggle-menu{
+    display: none;
+}
+.navigation input:checked ~ .hamburger{
+    background: transparent;
+}
+
+.navigation input:checked ~ .hamburger:before{
+    top: 0;   
+    transform: rotate(-45deg);
+    width: 30px;
+}
+.navigation input:checked ~ .hamburger:after{
+    top: 0;   
+    transform: rotate(45deg);
+    width: 30px;
+}
+.navigation input:checked ~ .menu{
+    right: 0;
+}
+.about-shortdetail,.form-control{
+    background-image: linear-gradient(to bottom right,rgb(132, 242, 244),rgb(238, 137, 221));
+
+}
+
+
+.my-dark{
+    background-image: linear-gradient(to bottom right,rgb(31, 2, 33),rgb(70, 26, 7));
+    color: white;
+    .recipe-title{
+    color: white;
+    }
+    .navdark,.carousel-inner, .about-shortdetail,.form-control{
+        background-image: linear-gradient(to bottom right,rgb(31, 2, 33),rgb(70, 26, 7));
+        color: white;
+    }
+    .navigation input:checked ~ .menu{
+        background-image: linear-gradient(to bottom right,rgb(31, 2, 33),rgb(70, 26, 7));
+        color: white;
+    }    
+    .menu a{
+        color: white;
+    }
+    .hamburger{
+       
+        background-color: rgb(237, 234, 234);
+    }
+    .hamburger:before,
+    .hamburger:after{        
+        background-color: rgb(244, 238, 238);
+     
+    }
+    .toggler-darklight{
+        background-image: linear-gradient(to bottom right,rgb(98, 13, 104),rgb(245, 85, 45));
+    
+    }
+}
+.toggler-icon{
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.toggler-icon img{
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.darklightbtn{
+    border: none;
+    border-radius: 50%;
+}
+
+.container{
+    display: grid;
+    place-items: center;
+}
+
+
+#coupon{
+    height: fit-content;
+    width: fit-content;
+    background-image: linear-gradient(to bottom right,rgb(156, 12, 164),rgb(245, 74, 17));
+    position: absolute;
+    margin-top: 800px;
+    place-items: center;
+    visibility: hidden;
+    z-index: 100;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 10px 10px 10px   rgb(136, 134, 135);
+}
+.closebtn{
+    float: right ;
+    color: #ad5f3e;
+}
+.coupon-content{
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+}
+.coupon-name,
+.coupon-recipe-name{
+    margin: 10%;
+    box-shadow: 5px 5px 5px   rgb(136, 134, 135);
+}
+.content-img{
+    /* height: 300px;
+    width: 250px; */
+}
+.content-img img{
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px   rgb(136, 134, 135);
+}
+
+
+
+.img-container{
+    height: 54px;
+    width: 30%;
+    cursor: pointer;
+    /* border: 2px solid rgb(15, 16, 15);     */
+}
+.img-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+}
+.recipe-name{
+    height: 100%;
+    width: 69%;
+    align-items: center;
+    margin-left: 3%;
+    height: 48px;
+    cursor: pointer;
+}
+
+.heading-center{
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+
+.geowithweather{
+    /* border: 1px solid rgba(207, 207, 209, 0.567); */
+    width: 100%;
+    height: fit-content;
+    font-size: 17px;
+}
+#out,#weather{
+    margin: 20px;
+}
+.geoweatherbtn{
+    background-color:#ba4e2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight:500;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.geoweatherbtn:hover{
+    background-color: white;
+    color: #ba4e2f;
+    transition: 0.5s;
+    border: 2px solid #ba4e2f ;
+}
+
+
+.row{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    /* border: 2px solid purple; */
+}
+#first{
+    /* background-color: green;     */
+}
+.recipe-container{
+    cursor: pointer;
+    text-decoration: none; 
+}
+.recipe-container img{
+    width: 250px;
+}
+.recipe-container:hover,
+.nav-link:hover{
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0.6;
+}    
+.recipe-title{
+    color: brown;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    height: 150px;
+    margin-top: 2.5%;
+}
+
+
+.read{
+    text-align: right;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    /* border: 2px solid green; */
+    font-size: 17px;
+}
+
+.recipe-here{
+    text-decoration: underline;
+    color:#ba4e2f;
+    font-weight: 600;
+}
+
+
+.subscribe-detail{
+    border: 2px solid rgba(180, 180, 180, 0.845);
+    width: 95%;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.subscribe-p,
+.form-check{
+    text-align: center;
+    width: 100%;
+    margin: 0.5em 0 0.5em;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.text{
+    /* border: 2px solid rgba(59, 40, 203, 0.845); */
+    width: 95%;
+    margin-left: 3%;
+    margin-right: 2%;
+}
+
+.form-control{    
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+}
+
+.form-group{
+    width: 80%;
+}
+
+.form-sbtn{
+    width: 100px;
+    /* border: 2px solid rgba(59, 40, 203, 0.845); */
+}
+
+.form-check{
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.btn{
+    background-color: #ba4e2f;
+    color: white;
+    font-size: 18px;
+}
+
+form{
+    width: 100%;
+    display: inline;
+    flex-wrap: wrap;
+}
+
+
+.about-shortdetail{
+    border: 2px solid rgb(222, 223, 222);
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.shortmyimage{
+    /* border: 2px solid rgb(169, 12, 180); */
+    width: 20%;
+    margin: 2%;
+}
+
+.shortmyimage img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.shortmytext{
+    /* border: 2px solid rgb(169, 12, 180); */
+    width: 70%;
+    margin-left: 3%;
+    margin-right: 3%;
+    display: block;
+    margin: 2%;  
+}
+
+.about-shortchristina{
+    font-weight: 400;
+    line-height: 1.3;
+    font-size: 1.625em;
+}
+
+.about-shorttext{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 2em;
+}
+
+.findme{
+    color:#ba4e2f;
+}
+
+.learnmore{
+    color:#ba4e2f;
+    font-weight: 600;
+    float: right;   
+}
+
+.recipe-search{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    width: 100%;
+}
+
+.form-control{   
+    padding: 13px;
+}
+.heading-cdr{
+    /* border: 2px solid purple; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+footer{
+    /* border: 2px solid   green; */
+    align-items: center;
+}
+
+.backtotop{
+    width: 100%;
+    font-size: 23px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 3%;
+    margin-bottom: 3.5%;
+}
+
+.privacy-signup{
+    /* border: 2px solid   green; */
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.ppolicy,
+.signup,
+.faq{
+    width: 45%;
+    /* border: 2px solid rgba(0, 19, 128, 0.882); */
+    text-align: center;
+}
+
+.copyright{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;    
+}
+
+.crdft{
+    font-weight: 500;
+}
+
+.copy{
+    height: 100px;
+    margin: 2%;
+    /* border: 2px solid rgba(0, 19, 128, 0.882); */
+}
+
+
+@media screen and (max-width:1300px){
+    body{
+        /* background-color: #2de859; */
+    }
+    
+  
+    .carousel-inner{
+        width: 97%;
+        margin-left: 3px;
+
+    }
+    .left-control{    
+        width: 1%;
+        width: 1%;
+    }
+}
+
+@media screen and (max-width:1040px){
+    .my-dark{
+        .menu{
+            right: -350px;
+            background-image: linear-gradient(to bottom right,rgb(31, 2, 33),rgb(70, 26, 7));
+        }  
+    }
+  
+    #dftcarousel{
+        visibility: hidden;
+    }
+    .logo {
+        height:60px;
+        width:200px;
+    }
+    .logo-siderbar,   
+    .hamburger,
+    .toggle-menu{
+        display: block;
+    }  
+    header{
+        /* padding: 10px 20px; */
+    }
+    .logo-siderbar {
+        padding-right: 70px;
+        padding-top:65px
+        /* border: 1px solid green; */
+    }
+    .menu{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -350px;
+        background-image: linear-gradient(to bottom right,rgb(132, 242, 244),rgb(238, 137, 221));
+        border: 1px solid gray;
+        width: 350px;
+        height: 100%;
+        padding-top: 20px;     
+           
+    }
+    .menu li{
+        width: 100%;
+    }
+    .menu li a,
+    .menu li a:hover{
+        padding: 20px;
+        font-size: 20px;
+        /* box-shadow: 0 1px 0 gray; */
+    }
+    .socialicons{
+        margin-top: 50px;
+        float: left;
+        /* box-shadow: 0 1px 0 rgb(86, 83, 83); */
+        width: 100%;
+
+    }
+    .carousel-inner{
+        width: 96%;
+        margin-left: 6px;
+
+    }
+    .left-control{    
+        width: 1%;
+    }
+  
+}
+
+
+@media screen and (max-width:900px){
+    body{
+        /* background-color: #833a64; */
+    }
+    .shortmyimage{
+        /* border: 2px solid rgb(169, 12, 180); */
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+  
+}
+@media screen and (max-width:850px){
+    body{
+        /* background-color: #2de84f; */
+    }
+   
+    .shortmyimage{
+        margin-top: 18%;
+        margin-bottom: 13%;
+    }
+    .form-group,
+    .form-sbtn{
+        /* border: 5px solid green; */
+        width: 100%;
+    }
+    .form-control{
+        width: 100%;
+
+    }
+    .btn{
+        margin-top: 2%;
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:700px){
+    body{
+        /* background-color: #1916d1; */
+    }
+    .logo {
+        height:60px;
+        width:250px;
+    }
+    .privacy-signup{
+        display: block;
+    }
+    .ppolicy,
+    .signup,
+    .faq{
+        width: 100%;
+        text-align: center;
+    }
+   
+    .about-shortdetail{
+       display: block;
+    }
+    .shortmyimage{
+        width: 100%;
+        margin: 0%;
+        height: 200px;
+    }
+    .shortmyimage img{
+        width: 40%;
+        height: 200px;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .shortmytext{
+        width: 100%;
+        margin: 0%;
+        display: block;
+    
+    }
+    
+    .btn{
+        margin-top: 2%;
+        width: 100%;
+    }
+    .carousel-inner{
+        width: 93%;
+        margin-left: 12px;
+
+    }
+    .left-control{    
+        width: 1%;
+    }
+}
+@media screen and (max-width:600px){
+    .logo {
+        height:60px;
+        width:300px;
+        margin-left: 5%;
+    }
+    #first{
+        width: 180px;
+        margin-left: 40px;
+    }
+    .row{
+        margin: 0;
+        /* border: 2px solid rgb(128, 0, 94); */
+        width: fit-content;
+        margin-left: 5%;
+    }
+    .recipe-title{
+        /* border: 2px solid rgb(42, 81, 128); */
+        height: 120px;
+
+    }
+    
+    .shortmyimage{
+        width: 100%;
+        margin: 0%;
+        height: 180px;
+    }
+    .shortmyimage img{
+        width: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        height: 180px;
+    }
+}
+@media screen and (max-width:500px){
+   
+    .navigation input:checked ~ .menu{
+        right: -80px;
+    }
+    footer,.copyright{
+        font-size: 15px;
+    }
+    /* #first{
+        width: 180px;
+        margin-left: 20px;
+
+    } */
+    .row{
+        margin: 0;
+        /* border: 2px solid rgb(128, 0, 94); */
+        width: fit-content;
+        margin-left: 5%;
+    }
+    .content-img img{
+        height: 200px;
+        width: 80%;
+    }   
+    #coupon{
+        font-size: 15px;
+        width: 200px;
+        margin-top: 650px;
+    }
+ 
+}
+@media screen and (max-width:450px){
+    .row{
+        margin: 1%;
+        /* border: 2px solid rgb(0, 128, 6); */
+        width: 98%;
+    }  
+    #first{
+        width: 125px;
+        margin-left: 2px;
+    }
+    #coupon{
+        place-items: center;
+        font-size: 15px;
+        width: 200px;
+        margin-top: 434px;
+        margin-left: 2%;
+    }
+
+}
+@media screen and (max-width:400px){
+    #first{
+        width: 150px;
+        margin-left: 25px;
+    }
+    #coupon{
+        place-items: center;
+        font-size: 15px;
+        width: 200px;
+        margin-top: 328px;
+        margin-left: 24%;
+    }
+}

@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="index.css"/>
+        <title>Dessert for Two - Dessert for Two</title>
+        <link rel="icon" href="images/favicon.png"/>
+    </head>
+    <body >
+        <header class="navdark">
+            <div class="darklight">
+                <button onclick="darkmode()" class="toggler-darklight"><img src="images/darklightbtn.png" alt="dark-light"></button>
+            </div>
+            <div class="logo" >
+                <a href="./index.html">
+                    <img src="images/regular.png" alt="logo">
+                </a>
+            </div>
+            <div class="navigation">
+                <input type="checkbox" class="toggle-menu">            
+                <div class="hamburger"></div>              
+
+                <ul class="menu">
+                    <div class="logo-siderbar" >
+                        <a href="./index.html">
+                            <img src="images/regular.png" alt="logo">
+                        </a>
+                    </div>
+                    <li><a href="./index.html">Home</a> </li>
+                    <li><a href="./listing/recipes.html">Recipes</a> </li>
+                    <li><a href="./listing/about.html">About</a> </li>
+                    <li><a href="./listing/store.html">Store</a> </li>
+                    <li><a href="./listing/mycookbooks.html">MyCookbooks</a> </li>
+                    <ul class="socialicons" >
+                        <a href="https://www.facebook.com/DessertForTwo" target="_blank" ><img src="images/facebook.png" alt="facebook" style="filter: invert(33%) sepia(98%) saturate(590%) hue-rotate(332deg) brightness(92%) contrast(91%);"> </a>
+                        <a href="https://www.instagram.com/dessertfortwo/" target="_blank" ><img src="images/insta.png" alt="instagram" style="filter: invert(33%) sepia(98%) saturate(590%) hue-rotate(332deg) brightness(92%) contrast(91%);"> </a>
+                        <a href="https://www.pinterest.com/dessertfortwo/_created/" target="_blank" ><img src="images/pinterest.png" alt="pinterest" style="filter: invert(33%) sepia(98%) saturate(590%) hue-rotate(332deg) brightness(92%) contrast(91%);"> </a>
+                    </ul>  
+                </ul>                
+            </div>
+        </header>
+        
+         
+         
+             <!-- COUPON  -->
+          <div class="container">
+            <div id="coupon" >
+              <button class="closebtn" onclick="closeCoupon()">&times;</button>
+              <div class="coupon-content">
+                  <p class="coupon-name">RECIPE FOR YOU</p>
+                  <div class="content-img">
+                      <img src="images/zuppa-toscana-3-300x400.jpg" alt="zuppa toscana" class="img-responsive">
+                  </div>               
+                  <p class="coupon-recipe-name">zuppa toscana</p>
+              </div>
+            </div>
+            </div>
+            <!-- carousel -->
+            <div id="dftcarousel" class="carousel slide" data-ride="carousel">
+                <div class="left-control">
+                    <a class="left-carousel-control" href="#dftcarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                </div>
+                <div class="carousel-inner">
+                    <div class="item active">                    
+                        <div class="carousel">
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/texas-chocolate-sheet-cake-recipe.jpg" alt="Chocolate Texas Sheet Cake Recipe (Quarter Sheet Cake size)">
+                                </div>
+                                <p class="recipe-name">Chocolate Texas Sheet Cake Recipe</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Small-batch-Brownies-for-Two-5-360x480.jpg" alt="Small Batch Recipe for Brownies with Cocoa">
+                                </div>
+                                <p class="recipe-name">Small Batch Recipe for Brownies with Cocoa</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/chocolate-chip-cookie-bars-360x480.jpg" alt="Chocolate Chip Pan Cookie Bars">
+                                </div>
+                                <p class="recipe-name">Chocolate Chip Pan Cookie Bars</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/oreo-brownies-360x480.jpg" alt="Oreo Brownie Bars">
+                                </div>
+                                <p class="recipe-name">Oreo Brownie Bars</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Mini-Lemon-Cheesecakes-3-300x400.jpg" alt="Mini Lemon Cheesecakes">
+                                </div>
+                                <p class="recipe-name">Mini Lemon Cheesecakes</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/mini-strawberry-cheesecakes-7-300x400.jpg" alt="Mini strawberry cheesecakes">
+                                </div>
+                                <p class="recipe-name">Mini strawberry cheesecakes</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/blackberry-cupcakes-13-300x400.jpg" alt="Blackberry cupcakes">
+                                </div>
+                                <p class="recipe-name">Blackberry cupcakes</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Lemon-Shortbread-Cookies-12-300x400.jpg" alt="Lemon Shortbread Cookies">
+                                </div>
+                                <p class="recipe-name">Lemon Shortbread Cookies</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="item ">                    
+                        <div class="carousel">
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Homemade-Twix-Bars-300x400.jpg" alt="homemade Twix bars">
+                                </div>
+                                <p class="recipe-name">homemade Twix bars</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Honey-Garlic-Chicken-Thighs-5-1-300x400.jpg" alt="Honey Garlic Chicken Thighs">
+
+                                </div>
+                                <p class="recipe-name">Honey Garlic Chicken Thighs</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Mini-Chocolate-Cake-2-300x400.jpg" alt="mini chocolate cake">
+                                </div>
+                                <p class="recipe-name">mini chocolate cake</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Nutella-Cupcakes-14-300x400.jpg" alt="Nutella cupcakes">
+                                </div>
+                                <p class="recipe-name">Nutella cupcakes</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Banana-Milkshake-8-300x400.jpg" alt="banana milkshake">
+                                </div>
+                                <p class="recipe-name">banana milkshake</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Chocolate-Chippers-Cookies-6-300x400.jpg" alt="Chocolate Chipper Cookies">
+                                </div>
+                                <p class="recipe-name">Chocolate Chipper Cookies</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/15-Minute-Puff-Pastry-h-300x400.jpg" alt="puff pastry">
+                                </div>
+                                <p class="recipe-name">puff pastry</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Oreo-Cheesecake-Cupcakes-6-300x400.jpg" alt="oreo cheesecake cupcakes">
+                                </div>
+                                <p class="recipe-name">oreo cheesecake cupcakes</p>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="item ">                    
+                        <div class="carousel">
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/2-ingredient-peanut-butter-cookies-3-300x400.jpg" alt="2 Ingredient Peanut Butter Cookies">
+                                </div>
+                                <p class="recipe-name">2 Ingredient Peanut Butter Cookies</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Tea-Cakes-6-300x400.jpg" alt="Old Fashioned Tea Cakes Recipe">
+                                </div>
+                                <p class="recipe-name">Old Fashioned Tea Cakes Recipe</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Florentine-Cookies-6-300x400.jpg" alt="Florentine cookies">
+                                </div>
+                                <p class="recipe-name">Florentine cookies</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Almond-Flour-Peanut-Butter-Cookies-4-300x400.jpg" alt="Almond Flour Peanut Butter Cookies">
+                                </div>
+                                <p class="recipe-name">Almond Flour Peanut Butter Cookies</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Coconut-Oil-Chocolate-Chip-Cookies-2-1-300x400.jpg" alt="Healthy Chocolate Chip Cookies with Coconut Oil">
+                                </div>
+                                <p class="recipe-name">Healthy Chocolate Chip Cookies with Coconut Oil</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/flourless-chocolate-cookies-3-1-300x400.jpg" alt="flourless chocolate cookies">
+                                </div>
+                                <p class="recipe-name">flourless chocolate cookies</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/White-Chocolate-Chip-Cookies-300x400.jpg" alt="White Chocolate Chip Cookies">
+                                </div>
+                                <p class="recipe-name">White Chocolate Chip Cookies</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/chocolate-shortbread-1.jpg" alt="chocolate-shortbread">
+                                </div>
+                                <p class="recipe-name">chocolate-shortbread</p>
+                            </div>
+                        </div>          
+                    </div>              
+                </div>
+                <div class="right-control">
+                    <a class="right-carousel-control" href="#dftcarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+
+            
+            <div id="content">
+
+            <!-- new recipes -->
+              <!-- geolocation -->
+              <div class="geowithweather">                
+                <!-- <button class="geoweatherbtn" onclick="geolocation()">Get Location</button> -->
+                <p id="out"></p>
+                <p id="weather"></p>
+            </div>
+            <p class="heading-center">New Recipes</p>
+            <div class="row">
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/texas-chocolate-sheet-cake-recipe.jpg" alt="Chocolate Texas Sheet Cake Recipe (Quarter Sheet Cake size)" class="img-responsive">
+                        <p class="recipe-title">Chocolate Texas Sheet Cake Recipe</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Small-batch-Brownies-for-Two-5-360x480.jpg" alt="Small Batch Recipe for Brownies with Cocoa" class="img-responsive">
+                        <p class="recipe-title">Small Batch Recipe for Brownies with Cocoa</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/chocolate-chip-cookie-bars-360x480.jpg" alt="Chocolate Chip Pan Cookie Bars" class="img-responsive">
+                        <p class="recipe-title">Chocolate Chip Pan Cookie Bars</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/oreo-brownies-360x480.jpg" alt="Oreo Brownie Bars" class="img-responsive">
+                        <p class="recipe-title">Oreo Brownie Bars</p>
+                    </a>
+                </div>   
+                                
+                <div class="read">
+                    <p class="heading-more" >See <span class="recipe-here"> ALL RECIPES HERE &#8594</span></p>                
+                </div> 
+                
+
+                <!---Recipes for Spring-->
+                <p class="heading-center">Recipes for Spring</p>
+
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Mini-Lemon-Cheesecakes-3-300x400.jpg" alt="Mini Lemon Cheesecakes"  class="img-responsive">
+                        <p class="recipe-title">Mini Lemon Cheesecakes</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/mini-strawberry-cheesecakes-7-300x400.jpg" alt="Mini strawberry cheesecakes"  class="img-responsive">
+                        <p class="recipe-title">Mini strawberry cheesecakes</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/blackberry-cupcakes-13-300x400.jpg" alt="Blackberry cupcakes"  class="img-responsive">
+                        <p class="recipe-title">Blackberry cupcakes</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Lemon-Shortbread-Cookies-12-300x400.jpg" alt="Lemon Shortbread Cookies"  class="img-responsive">
+                        <p class="recipe-title">Lemon Shortbread Cookies</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Homemade-Twix-Bars-300x400.jpg" alt="homemade Twix bars"  class="img-responsive">
+                        <p class="recipe-title">homemade Twix bars</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Honey-Garlic-Chicken-Thighs-5-1-300x400.jpg" alt="Honey Garlic Chicken Thighs"  class="img-responsive">
+                        <p class="recipe-title">Honey Garlic Chicken Thighs</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Mini-Chocolate-Cake-2-300x400.jpg" alt="mini chocolate cake"  class="img-responsive">
+                        <p class="recipe-title">mini chocolate cake</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Nutella-Cupcakes-14-300x400.jpg" alt="Nutella cupcakes"  class="img-responsive">
+                        <p class="recipe-title">Nutella cupcakes</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Banana-Milkshake-8-300x400.jpg" alt="banana milkshake"  class="img-responsive">
+                        <p class="recipe-title">banana milkshake</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Chocolate-Chippers-Cookies-6-300x400.jpg" alt="Chocolate Chipper Cookies"  class="img-responsive">
+                        <p class="recipe-title">Chocolate Chipper Cookies</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/15-Minute-Puff-Pastry-h-300x400.jpg" alt="puff pastry"  class="img-responsive">
+                        <p class="recipe-title">puff pastry</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Oreo-Cheesecake-Cupcakes-6-300x400.jpg" alt="oreo cheesecake cupcakes"  class="img-responsive">
+                        <p class="recipe-title">oreo cheesecake cupcakes</p>
+                    </a>
+                </div>   
+
+                <!-- subscribe -->
+                <div class="subscribe-detail">
+                    <h3 class="subscribe-p">Subscribe to Dessert for Two!</h3>
+                    <p class="subscribe-p">Get updates on the latest posts and more from Dessert for Two straight to your inbox.</p>
+                    <form>
+                    <div class="text">
+                        <div class="form-group col-md-10 col-sm-12">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                        </div>
+                        <div class="form-sbtn col-md-2 col-sm-12">
+                        <div class="form-sbtn">
+                            <button type="subscribe " class="btn">subscribe</button>
+                        </div>
+                        </div>             
+                        <div class="form-check mb-3">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember"> 
+                            I consent to receiving emails and personalized ads.
+                        </label>
+                        </div>  
+                    </div>   
+                    </form>         
+                </div>         
+
+                <!---Easy Cookie Recipes-->
+                <p class="heading-center">Easy Cookie Recipes</p>
+
+
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/2-ingredient-peanut-butter-cookies-3-300x400.jpg" alt="2 Ingredient Peanut Butter Cookies" class="img-responsive">
+                        <p class="recipe-title">2 Ingredient Peanut Butter Cookies</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Tea-Cakes-6-300x400.jpg" alt="Old Fashioned Tea Cakes Recipe" class="img-responsive">
+                        <p class="recipe-title">Old Fashioned Tea Cakes Recipe</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Florentine-Cookies-6-300x400.jpg" alt="Florentine cookies" class="img-responsive">
+                        <p class="recipe-title">Florentine cookies</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Almond-Flour-Peanut-Butter-Cookies-4-300x400.jpg" alt="Almond Flour Peanut Butter Cookies" class="img-responsive">
+                        <p class="recipe-title">Almond Flour Peanut Butter Cookies</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Coconut-Oil-Chocolate-Chip-Cookies-2-1-300x400.jpg" alt="Healthy Chocolate Chip Cookies with Coconut Oil" class="img-responsive">
+                        <p class="recipe-title">Healthy Chocolate Chip Cookies with Coconut Oil</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/flourless-chocolate-cookies-3-1-300x400.jpg" alt="flourless chocolate cookies" class="img-responsive">
+                        <p class="recipe-title">flourless chocolate cookies</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/White-Chocolate-Chip-Cookies-300x400.jpg" alt="White Chocolate Chip Cookies" class="img-responsive">
+                        <p class="recipe-title">White Chocolate Chip Cookies</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/chocolate-shortbread-1.jpg" alt="chocolate-shortbread" class="img-responsive">
+                        <p class="recipe-title">chocolate-shortbread</p>
+                    </a>
+                </div>   
+
+                <div class="read" >
+                    <p class="heading-more" >See <span class="recipe-here" > ALL COOKIE RECIPES HERE &#8594</span></p>                
+                </div> 
+
+             <!---Famous Recipes-->
+             <p class="heading-center">Famous Recipes</p>
+
+
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/chocolate-chip-cookies-without-eggs-300x400.jpg" alt="Chocolate Chip Cookies without Eggs" class="img-responsive">
+                        <p class="recipe-title">Chocolate Chip Cookies without Eggs</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/pancakes-for-two-6-300x400.jpg" alt="Pancakes for Two" class="img-responsive">
+                        <p class="recipe-title">Pancakes for Two</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/small-batch-chocolate-chip-cookies-1-300x400.jpg" alt="Chocolate Chip Cookies (Small Batch Recipe)" class="img-responsive">
+                        <p class="recipe-title">Chocolate Chip Cookies (Small Batch Recipe)</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Healthy-Fruit-Dip-5-300x400.jpg" alt="Fruit Dip" class="img-responsive">
+                        <p class="recipe-title">Fruit Dip</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/mini-vanilla-cake-recipe-300x400.jpg" alt="Mini Vanilla Cake" class="img-responsive">
+                        <p class="recipe-title">Mini Vanilla Cake</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/strawberry-cream-cheese-frosting-300x400.jpg" alt="Strawberry Cream Cheese Frosting" class="img-responsive">
+                        <p class="recipe-title">Strawberry Cream Cheese Frosting</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/crepes-for-two-300x400.jpg" alt="Crepes for Two" class="img-responsive">
+                        <p class="recipe-title">Crepes for Two</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/eggless-sugar-cookies-15-300x400.jpg" alt="No Egg Sugar Cookies" class="img-responsive">
+                        <p class="recipe-title">No Egg Sugar Cookies</p>
+                    </a>
+                </div>   
+                    
+                <!--about-shortdetail-->
+                <div class="about-shortdetail">
+                    <div class="shortmyimage">
+                        <img src="images/HeadShot.jpg">
+                    </div>
+                    <div class="shortmytext">
+                        <h2 class="about-shortchristina">About Christina</h2>
+                        <p class="about-shorttext">Christina Lane is the author of 4 cookbooks all about cooking and baking for two. She has scaled down hundreds of recipes into smaller servings so you can enjoy your favorite dishes without the leftovers! Valentine's Day is her favorite holiday. You can also find her at <span>BeanRecipes.com</span>.</p>
+                        <p class="learnmore">Learn more about me &#8594</p>
+                    </div>
+                </div>
+                <div class="recipe-search">
+                    <input type="text" class="form-control" placeholder="search for a recipe + hit enter">
+                </div>
+                                   
+                <!---Chocolate Dessert Recipes-->
+                <p class="heading-center">Chocolate Dessert Recipes</p>
+                <p class="heading-cdr">Chocolate desserts for two people. All of your favorite easy chocolate desserts compiled into one big list. Most recipes serve two, but can be easily doubled.</p>
+
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/chocolate-banana-muffins-6-300x400.jpg" alt="The Most Delicious Recipe for Chocolate Banana Muffins" class="img-responsive">
+                        <p class="recipe-title">The Most Delicious Recipe for Chocolate Banana Muffins</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Chocolate-Mousse-8-300x400.jpg" alt="Chocolate Mousse" class="img-responsive">
+                        <p class="recipe-title">Chocolate Mousse</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Mini-Cheesecakes-4-300x400.jpg" alt="Small Cheesecake Recipe" class="img-responsive">
+                        <p class="recipe-title">Small Cheesecake Recipe</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/no-bake-chocolate-cheesecake-8-300x400.jpg" alt="No Bake Chocolate Cheesecake" class="img-responsive">
+                        <p class="recipe-title">No Bake Chocolate Cheesecake</p>
+                    </a>
+                </div>   
+
+                <div class="read">
+                    <p class="heading-more" >See more <span class="recipe-here">CHOCOLATE DESSERT RECIPES  &#8594</span></p>                
+                </div> 
+
+                <!---Dinner Recipes for Two--->
+                <p class="heading-center">Dinner Recipes for Two</p>
+                <p class="heading-cdr">I have the perfect starting point to help you with supper tonight! Browse through these dinner recipes for two to get started.</p>
+
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/make-ahead-mashed-potatoes-4-300x400.jpg" alt="Freezer Recipe for Make Ahead Mashed Potatoes" class="img-responsive">
+                        <p class="recipe-title">Freezer Recipe for Make Ahead Mashed Potatoes</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Sweet-Potato-Casserole-with-Marshmallows-20-300x400.jpg" alt="Sweet Potato Casserole with Marshmallows" class="img-responsive">
+                        <p class="recipe-title">Sweet Potato Casserole with Marshmallows</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/zuppa-toscana-3-300x400.jpg" alt="Zuppa Toscana Olive Garden Copycat Soup" class="img-responsive">
+                        <p class="recipe-title">Zuppa Toscana Olive Garden Copycat Soup</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/instant-pot-chicken-and-dumplings-for-two-5-300x400.jpg" alt="Chicken and Dumplings (Instant Pot Recipe)" class="img-responsive">
+                        <p class="recipe-title">Chicken and Dumplings (Instant Pot Recipe)</p>
+                    </a>
+                </div>   
+
+                <div class="read">
+                    <p class="heading-more" >See more <span class="recipe-here"> DINNER FOR TWO RECIPES  &#8594</span></p>                
+                  </div>
+
+                <!---Slow Cooker Recipes for Two-->
+                <p class="heading-center">Slow Cooker Recipes for Two</p>
+
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/Slow-Cooker-Taco-Soup-6-300x400.jpg" alt="Slow Cooker Taco Soup" class="img-responsive">
+                        <p class="recipe-title">Slow Cooker Taco Soup</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/slow-cooker-pulled-pork-tenderloin-4-300x400.jpg" alt="Slow Cooker Pulled Pork Tenderloin" class="img-responsive">
+                        <p class="recipe-title">Slow Cooker Pulled Pork Tenderloin</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/crock-pot-pork-tenderloin-3-300x400.jpg" alt="Crockpot Pork Tenderloin" class="img-responsive">
+                        <p class="recipe-title">Crockpot Pork Tenderloin</p>
+                    </a>
+                </div>   
+                <div id="first" class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+                    <a class="recipe-container" href="#">
+                        <img src="images/crockpot-beef-and-vegetable-soup-5-300x400.jpg" alt="Crockpot Beef and Vegetable Soup" class="img-responsive">
+                        <p class="recipe-title">Crockpot Beef and Vegetable Soup</p>
+                    </a>
+                </div>   
+
+                <div class="read">
+                    <p class="heading-more" >See more <span class="recipe-here"> SLOW COOKER RECIPES FOR TWO  &#8594</span></p>                
+                </div> 
+
+                
+                <!--footer-->
+                <footer>
+                    <div class="backtotop">
+                    <a class="nav-link " aria-current="page" href="#">&uarr; Back to top</a>
+                    </div>
+                    <div class="privacy-signup">
+                    <div class="ppolicy">
+                        <p >PRIVACY POLICY</p>
+                    </div>
+                    <div class="signup">
+                        <p >SIGN UP! FOR EMAILS AND UPDATES</p>
+                    </div>
+                    <div class="faq">
+                        <p >FAQ</p>
+                    </div>
+                    </div>
+                    <div class="copyright">
+                    <p class="copy">COPYRIGHT © 2022<span class="crdft"> DESSERT FOR TWO</span> </p>
+                    </div>          
+                </footer> 
+           </div>    
+
+        <script src="index.js"></script>
+        <script>
+            window.onload = function() {
+                darklightmode()    
+                onloadPage();
+                geolocation()
+            }    
+        </script>
+    </body>
+</html>

@@ -1,0 +1,812 @@
+body{
+    background-image: linear-gradient(to bottom right,rgb(132, 242, 244),rgb(238, 137, 221));
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    box-sizing: border-box;
+    color: rgb(74, 71, 71);
+    font-weight: 400;
+}
+
+header{
+    position: fixed;
+    height: 100px;
+    background-image: linear-gradient(to bottom right,rgb(132, 242, 244),rgb(238, 137, 221));
+    display: flex;
+    width: 100%;
+    padding: 25px;
+    background-color: white;
+    z-index:100;
+}
+
+#dftcarousel{
+    /* border: 2px solid blue; */
+    width: 100%;
+}
+.carousel-inner{
+    /* border: 2px solid rgb(111, 6, 118); */
+    width: 98%;
+    font-size: 15px;
+    margin-top: 100PX;
+    background-image: linear-gradient(to bottom right,rgb(132, 242, 244),rgb(238, 137, 221));
+}
+
+.carousel{
+    /* border: 2px solid rgb(14, 111, 172); */
+    display: flex;
+    box-shadow: 0 0  3px rgb(109, 105, 105);
+    font-size: 13px;
+}
+.carousel-recipes{
+    /* border: 2px solid rgb(15, 16, 15); */
+    height: 56px;
+    width: 12%;
+    display: flex;
+    margin: 0.5%;
+}
+
+.right-control,
+.left-control{
+    margin-top: 120px;
+    /* border: 2px solid rgb(179, 28, 189); */
+    width: 1%;
+    height: 40px;
+}
+.left-carousel-control,
+.right-carousel-control{
+    color: gray ;
+    border: 1px solid rgb(189, 190, 190);
+    border-radius: 5px;
+    width: 1%;
+}
+
+.img-container{
+    height: 54px;
+    width: 30%;
+    cursor: pointer;
+    margin-right: 5px;
+    /* border: 2px solid rgb(15, 16, 15);     */
+}
+.img-container img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(74, 71, 71);
+}
+a:hover{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(74, 71, 71);
+
+}
+.darklight{
+    /* background-color: rgb(192, 9, 9); */
+    padding-top: 9px;
+}
+.toggler-darklight{
+    background-image: linear-gradient(to bottom right,rgb(238, 137, 221),rgb(132, 242, 244));
+    border: none;
+    height: 30px;
+    width:30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.toggler-darklight img{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding-top: 3
+    px;
+}
+
+.logo {
+    margin-left: 90px;
+    height:50px;
+    width:150px;
+    /* border: 2px solid rgb(197, 24, 24); */
+}
+.logo img{
+    height:100%;
+    width:100%;
+    /* border: 2px solid rgb(29, 26, 26); */
+
+}    
+.navigation{
+    /* border: 2px solid rgb(185, 31, 185); */
+    width: 75%;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+.menu{
+    /* border: 5px solid rgb(33, 63, 154); */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    
+}
+.menu li{
+    list-style-type: none;
+    font-size: 20px;
+}
+.menu li a{
+    color: rgb(74, 67, 67);
+    text-decoration: none;
+    display: block;
+    margin-right: 40px;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.socialicons{
+    margin-left: 5%;
+    /* border: 2px solid rgb(18, 187, 156); */
+    display: flex;
+    margin-left: 5%;
+    width: 30%;
+}    
+.socialicons img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10PX;
+}
+
+
+.hamburger{
+    position: relative;
+    width: 30px;
+    height: 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    z-index: 2;
+    transition: 0.3s;
+    background-color: rgb(28, 27, 27);
+}
+.hamburger:before,
+.hamburger:after{
+    content: "";
+    position: absolute;  
+    height: 4px;
+    right: 0;
+    background-color: rgb(28, 27, 27);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.hamburger:before{
+    top: -10px;
+    width: 30px;
+}
+.hamburger:after{
+    top: 10px;
+    width: 30px;
+}
+.toggle-menu{
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    z-index: 3;
+    cursor: pointer;
+    opacity: 0;
+}
+.logo-siderbar,
+.hamburger,
+.toggle-menu{
+    display: none;
+}
+.navigation input:checked ~ .hamburger{
+    background: transparent;
+}
+
+.navigation input:checked ~ .hamburger:before{
+    top: 0;   
+    transform: rotate(-45deg);
+    width: 30px;
+}
+.navigation input:checked ~ .hamburger:after{
+    top: 0;   
+    transform: rotate(45deg);
+    width: 30px;
+}
+.navigation input:checked ~ .menu{
+    right: 0;
+    background-image: linear-gradient(to bottom right,rgb(132, 242, 244),rgb(238, 137, 221));
+}
+
+
+
+.about-shortdetail,.form-control{
+    background-image: linear-gradient(to bottom right,rgb(132, 242, 244),rgb(238, 137, 221));
+
+}
+
+
+.my-dark{
+    background-image: linear-gradient(to bottom right,rgb(31, 2, 33),rgb(70, 26, 7));
+    color: white;
+    .recipe-title{
+    color: white;
+    }
+    .navdark,.carousel-inner, .about-shortdetail,.form-control,.navigation input:checked ~ .menu{
+        background-image: linear-gradient(to bottom right,rgb(31, 2, 33),rgb(70, 26, 7));
+        color: white;
+    }
+  
+    .menu a{
+        color: white;
+    }
+    .hamburger{
+       
+        background-color: rgb(237, 234, 234);
+    }
+    .hamburger:before,
+    .hamburger:after{        
+        background-color: rgb(244, 238, 238);
+     
+    }
+    .toggler-darklight{
+        background-image: linear-gradient(to bottom right,rgb(98, 13, 104),rgb(245, 85, 45));
+    
+    }
+    .sort-results{
+        color: black;
+    }
+  
+
+}
+.toggler-icon{
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.toggler-icon img{
+    height: 35px;
+    width: 35px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.darklightbtn{
+    border: none;
+    border-radius: 50%;
+}
+
+.content{
+    /* border: 5px solid blue; */
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.container-mycookboos{
+    /* border: 2px solid blue; */
+    width: 80%;
+    margin: 3%;
+    margin-left: 10%;
+    margin-right: 10%;    
+}
+
+.heading{
+    color:#ba4e2f;
+    text-decoration: none;
+}
+
+.mycookbooksheading{
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 2em;
+    color: #515555;
+    line-height: 3em;
+}
+
+.MyCookbooks{
+    color: #515555;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.mcb-imag{
+    /* border: 2px solid rgb(240, 12, 175); */
+    height: 365px;
+    width: 100%;
+}
+
+.MyCookbooks-image{
+    /* border: 2px solid rgb(12, 120, 109); */
+    width: 30%;
+}
+
+.MyCookbooks-image img{
+    width: 100%;
+    height: 360px;
+}
+
+.sort-results{
+    /* border: 2px solid rgb(250, 130, 216); */
+    width: 95%;
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    color: gray;
+}
+
+.showresults{
+    width: 80%;
+    color: #515555;
+}
+
+.sort-dropdown,
+.dropdown{
+    font-weight: 400;
+    height: 45px;
+}
+
+.books-container{
+    /* border: 2px solid rgb(221, 240, 116); */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bookcontainer{
+    /* border: 2px solid rgb(6, 176, 244); */
+    width: 20%; 
+    margin: 1%;
+}
+
+.bookimage{
+    /* border: 2px solid rgb(244, 89, 6); */
+    width: 100%; 
+    height: 300px;  
+}
+
+.bookimage img{
+    width: 100%; 
+    height: 100%;  
+}
+
+.bookheading{
+    /* border: 2px solid rgb(39, 33, 30); */
+    width: 100%; 
+    color:#ba4e2f;
+    text-align: left;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.buyproduct{
+    /* border: 2px solid rgb(244, 89, 6); */
+    width: 100%; 
+    height: 50px; 
+    border-radius: 5PX;
+    font-weight: 700;
+    color: #515555;
+    background-color: rgba(177, 176, 176, 0.533);
+    border: none;
+}
+
+.checked {
+    color:#ba4e2f;
+}
+
+footer{
+    /* border: 2px solid   green; */
+    align-items: center;
+}
+
+.backtotop{
+    width: 100%;
+    font-size: 23px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 3%;
+    margin-bottom: 3.5%;
+}
+
+.privacy-signup{
+    /* border: 2px solid   green; */
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.ppolicy,
+.signup,
+.faq{
+    width: 45%;
+    /* border: 2px solid rgba(0, 19, 128, 0.882); */
+    text-align: center;
+}
+
+.copyright{
+    width: 100%;
+    font-size: 18px;
+    text-align: center;    
+}
+
+.crdft{
+    font-weight: 500;
+}
+
+.copy{
+    height: 100px;
+    margin: 2%;
+    /* border: 2px solid rgba(0, 19, 128, 0.882); */
+}
+
+
+
+@media screen and (max-width:1500px) {
+    body{
+        /* background-color: #4e5507; */
+    }
+    .container-mycookboos{
+        width: 84%;
+        margin: 3%;
+        margin-left: 8%;
+        margin-right: 8%;    
+    
+    }
+    .bookcontainer{
+        width: 22%; 
+        margin: 1%;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    body{
+        /* background-color: #39eb7a; */
+    }
+    .container-mycookboos{
+        width: 90%;
+        margin: 3%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+
+@media screen and (max-width:1300px) {
+    body{
+        /* background-color: #10d0e6; */
+    }
+    .container-mycookboos{
+        width: 94%;
+        margin: 3%;
+        margin-left: 3%;
+        margin-right: 3%;    
+    }
+    .carousel-inner{
+        width: 97%;
+        margin-left: 3px;
+
+    }
+    .left-control{    
+        width: 1%;
+        width: 1%;
+    }
+
+}
+
+@media screen and (max-width:1200px) {
+    body{
+        /* background-color: #16194f; */
+    }
+    .container-mycookboos{
+        width: 100%;
+        margin: 3%;
+        margin-left: 0%;
+        margin-right: 0%;    
+    }
+
+}
+
+@media screen and (max-width:1100px) {
+    body{
+        /* background-color: #d415e5; */
+    }
+    .container{
+        width: 95%;
+    }
+    .container-mycookboos{
+        width: 80%;
+        margin: 3%;
+        margin-left: 10%;
+        margin-right: 10%;    
+    }
+    .mcb-imag{
+        height: 400px;
+        width: 45%;
+    }
+
+    .MyCookbooks-image{
+        width: 100%;
+    }
+
+    .MyCookbooks-image img{
+        width: 100%;
+        height: 400px;
+    }
+
+    .bookimage{
+        width: 100%; 
+        height: 200px;  
+    }
+    .bookimage img{
+        width: 100%; 
+        height: 200px;  
+    }
+}
+
+
+@media screen and (max-width:1040px){
+    body{
+        /* background-color: #dce82d; */
+    }
+    #dftcarousel{
+        visibility: hidden;
+    } 
+    .my-dark{
+        .menu{
+            right: -350px;
+            background-image: linear-gradient(to bottom right,rgb(31, 2, 33),rgb(70, 26, 7));
+        }  
+    }
+    .logo {
+        height:60px;
+        width:200px;
+    }
+    .logo-siderbar,   
+    .hamburger,
+    .toggle-menu{
+        display: block;
+    }  
+    header{
+    }
+    .logo-siderbar {
+        padding-right: 70px;
+        padding-top:65px
+    }
+    .menu{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -350px;
+        background-image: linear-gradient(to bottom right,rgb(132, 242, 244),rgb(238, 137, 221));
+        border: 1px solid gray;
+        width: 350px;
+        height: 100%;
+        padding-top: 20px;     
+           
+    }
+    .menu li{
+        width: 100%;
+    }
+    .menu li a,
+    .menu li a:hover{
+        padding: 20px;
+        font-size: 20px;
+    }
+    .socialicons{
+        margin-top: 50px;
+        float: left;
+        /* box-shadow: 0 1px 0 rgb(86, 83, 83); */
+        width: 100%;
+
+    }
+
+    .carousel-inner{
+        width: 96%;
+        margin-left: 6px;
+
+    }
+    .left-control{    
+        width: 1%;
+    }
+}
+
+
+@media screen and (max-width:1000px) {
+    body{
+        /* background-color: #ede102; */
+
+    }
+   
+    .container-mycookboos{
+        width: 96%;
+        margin: 3%;
+        margin-left: 7%;
+        margin-right: 7%;    
+    
+    }
+    .mcb-imag{
+        height: 400px;
+        width: 50%;
+    }
+
+    .bookcontainer{
+        width: 22%; 
+        margin: 1.5%;
+    }
+
+  
+
+}
+
+@media screen and (max-width:900px) {
+    body{
+        /* background-color: #b18f90; */
+
+    }
+   
+    .container-mycookboos{
+        width: 92%;
+        margin: 3%;
+        margin-left: 4%;
+        margin-right: 4%;    
+    
+    }
+ 
+    
+}
+@media screen and (max-width:800px) {
+    body{
+        /* background-color: #fa0606a9; */
+
+    }
+    .container-mycookboos{
+        width: 100%;
+        margin: 3%;
+        margin-left: 0%;
+        margin-right: 0%;    
+    
+    }
+    .mcb-imag{
+        height: 400px;
+        width: 60%;
+    }
+
+  
+ 
+   
+}
+@media screen and (max-width:700px) {
+    body{
+        /* background-color: #fe26d3; */
+    }   
+    .logo {
+        height:60px;
+        width:250px;
+    }
+    .privacy-signup{
+        display: block;
+    }
+    .ppolicy,
+    .signup,
+    .faq{
+        width: 100%;
+        text-align: center;
+    }
+    .carousel-inner{
+        width: 93%;
+        margin-left: 12px;
+
+    }
+    .left-control{    
+        width: 1%;
+    }
+    .container-mycookboos{
+        width: 80%;
+        margin: 3%;
+        margin-right: 10%;    
+        margin-left: 10%;
+    
+    }
+    .mcb-imag{
+        height: 400px;
+        width: 85%;
+    }
+
+    .MyCookbooks-image{
+        width: 100%;
+
+    }
+
+
+    .bookcontainer{
+        width: 40%; 
+        margin: 5%;
+    }
+    .bookimage{
+        width: 100%; 
+        height: 300px;  
+    }
+    .bookimage img{
+        width: 100%; 
+        height: 300px;  
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    body{
+        /* background-color: #7e0781; */
+    }
+    .logo {
+        height:60px;
+        width:300px;
+        margin-left: 5%;
+    }
+    .container-mycookboos{
+        width: 90%;
+        margin: 3%;
+        margin-right: 5%;    
+        margin-left: 5%;
+    
+    }
+
+    .bookimage{
+        width: 100%; 
+        height: 300px;  
+    }
+    .bookimage img{
+        width: 100%; 
+        height: 300px;  
+    }
+     
+}
+@media screen and (max-width:500px) {
+    body{
+        /* background-color: #723fc5; */
+    }
+    .store{
+        width: 90%;
+        margin: 5%;
+    }
+    .container-mycookboos{
+        width: 100%;
+        margin: 3%;
+        margin-right: 0%;    
+        margin-left: 0%;
+    }
+    .navigation input:checked ~ .menu{
+        right: -80px;
+    }
+    .sort-results{
+        /* border: 2px solid rgb(250, 130, 216); */
+        width: 95%;
+        display: block;
+    }
+    .bookimage, .bookimage img{
+        width: 100%; 
+        height: 200px;  
+    }
+    .bookcontainer{
+        font-size: 15px;
+        /* border: 5px solid rgb(250, 130, 216); */
+        width: 40%; 
+        margin: 5%;
+        height: fit-content
+    }
+    footer,.copyright{
+        font-size: 15px;
+    }
+}
+

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="about.css"/>
+        <title>Dessert for Two - Dessert for Two</title>
+        <link rel="icon" href="images/favicon.png"/>
+    </head>
+    <body >
+        <header class="navdark">
+            <div class="darklight">
+                <button onclick="darkmode()" class="toggler-darklight"><img src="images/darklightbtn.png" alt="dark-light"></button>
+            </div>
+            <div class="logo" >
+                <a href="../index.html">
+                    <img src="images/regular.png" alt="logo">
+                </a>
+            </div>
+            <div class="navigation">
+                <input type="checkbox" class="toggle-menu">            
+                <div class="hamburger"></div>              
+
+                <ul class="menu">
+                    <div class="logo-siderbar" >
+                        <a href="../index.html">
+                            <img src="images/regular.png" alt="logo">
+                        </a>
+                    </div>
+                    <li><a href="../index.html">Home</a> </li>
+                    <li><a href="./recipes.html">Recipes</a> </li>
+                    <li><a href="./about.html">About</a> </li>
+                    <li><a href="./store.html">Store</a> </li>
+                    <li><a href="./mycookbooks.html">MyCookbooks</a> </li>
+                    <ul class="socialicons" >
+                        <a href="https://www.facebook.com/DessertForTwo" target="_blank" ><img src="images/facebook.png" alt="facebook" style="filter: invert(33%) sepia(98%) saturate(590%) hue-rotate(332deg) brightness(92%) contrast(91%);"> </a>
+                        <a href="https://www.instagram.com/dessertfortwo/" target="_blank" ><img src="images/insta.png" alt="instagram" style="filter: invert(33%) sepia(98%) saturate(590%) hue-rotate(332deg) brightness(92%) contrast(91%);"> </a>
+                        <a href="https://www.pinterest.com/dessertfortwo/_created/" target="_blank" ><img src="images/pinterest.png" alt="pinterest" style="filter: invert(33%) sepia(98%) saturate(590%) hue-rotate(332deg) brightness(92%) contrast(91%);"> </a>
+                    </ul>  
+                </ul>                
+            </div>
+        </header>
+        
+        <!-- carousel -->
+            <div id="dftcarousel" class="carousel slide" data-ride="carousel">
+                <div class="left-control">
+                    <a class="left-carousel-control" href="#dftcarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                </div>
+                <div class="carousel-inner">
+                    <div class="item active">                    
+                        <div class="carousel">
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Breakfast-Category-Image-300x400.jpg" alt="Breakfast" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Breakfast</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Bread-Category-Image-300x400.jpg" alt="Bread" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Bread</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Donuts-Category-Image-300x400.jpg" alt="Donuts" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Donuts</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Muffins-Scones-Category-Image-300x400.jpg" alt="Muffins" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Muffins</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Chocolate-Recipes-Category-Image-300x400.jpg" alt="Chocolate Desserts for Two" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Chocolate Desserts for Two</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Peanut-Butter-recipes-Category-Image-300x400.jpg" alt="Peanut Butter" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Peanut Butter</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Cupcakes-Category-Image-300x400.jpg" alt="Cupcakes" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Cupcakes</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Small-Six-Inch-Cake-Recipes-Category-Image-300x400.jpg" alt="Small Cake Recipes to make 6 Inch cake" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Small Cake Recipes to make 6 Inch cake</p>
+                            </div>
+                        </div>
+    
+                    </div>
+                    <div class="item ">                    
+                        <div class="carousel">
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Pies-Cobblers-Category-Image-300x400.jpg" alt="Pies and Cobblers" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Pies and Cobblers</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Cookies-and-Bars-Recipes-Category-Image-300x400.jpg" alt="Cookies and Bars" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Small Batch Recipe for Brownies with Cocoa</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Dinners-for-Two-Category-Image-300x400.jpg" alt="Dinners Recipes for Two" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Dinners Recipes for Two</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Pasta-Category-Image-300x400.jpg" alt="Pasta" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Pasta</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Meat-Seafood-Category-Image-300x400.jpg" alt="Meat / Seafood" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Meat / Seafood</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Drinks-Category-Image-300x400.jpg" alt="Drinks for Two" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Drinks for Two</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Egg-White-Recipes-Category-Image-300x400.jpg" alt="Egg White Only" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Egg White Only</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Egg-Yolk-Recipes-Category-Image-300x400.jpg" alt="Egg Yolk Only" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Egg Yolk Only</p>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="item ">                    
+                        <div class="carousel">
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Eggless-Recipes-Category-Image-300x400.jpg" alt="Eggless Recipes" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Eggless Recipes</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/No-Bake-Recipes-Category-Image-300x400.jpg" alt="No Bake" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">No Bake</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Christmas-Recipes-Category-Image-300x400.jpg" alt="Christmas" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Christmas</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Apple-Category-Image-300x400.jpg" alt="Apple Recipes" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Apple Recipes</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Pumpkin-Category-Image-300x400.jpg" alt="Pumpkin" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Pumpkin</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Frozen-Treats-Category-Image-300x400.jpg" alt="Frozen Treats" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Frozen Treats</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Vegan-Category-Image-300x400.jpg" alt="Vegan" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Vegan</p>
+                            </div>
+                            <div class="carousel-recipes"  class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+                                <div class="img-container">
+                                    <img src="images/Paleo-Category-Image-300x400.jpg" alt="Paleo" class="img-responsive">
+                                </div>
+                                <p class="recipe-name">Paleo</p>
+                            </div>
+                        </div>          
+                    </div>              
+                </div>
+                <div class="right-control">
+                    <a class="right-carousel-control" href="#dftcarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+
+            
+        <!--  content-->
+        <div class="maincontainer">
+            <div class="store">
+              <h1 class="mycookbooksheading">About Christina Lane of Dessert for Two</h1>
+             
+              <div class="content-container">
+                <div class="container-ebook">
+                  <div class="books-container">
+                    <div class="bookcontainer">
+                      <p class="heading-video">A little video about me:</p>
+                      <div class="video-container">
+                        <iframe  src="https://www.youtube.com/embed/i4o8emKWTrk?si=ZbQaIsd_ysHZZ_If" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </div>
+                      <div class="aboutme-container">
+                        <p class="heading-video">Or, some words about me:</p>
+                        <p class="aboutme">Howdy!  My name is Christina and I’m here to help you gain 10 pounds.</p>
+                        <p class="aboutme">No seriously, I’m here to make your life sweeter.</p>
+                        <p class="aboutme">I cook for two and like most people, I like dessert after dinner—but most dessert recipes make enough for 8 to 10 people!  I don’t need 8 extra slices of cake tempting me from my fridge.  Nor do I appreciate 2 dozen leftover cookies staring at me while I’m trying to eat a healthy breakfast.</p>
+                  <!-- advertisement -->
+                        <div class="advertisement">
+                            <div class="loader"></div>
+                        </div>
+                        <p class="aboutme">So, one day I started searching for dessert recipes that didn’t make so many servings.</p>
+                        <p class="aboutme">My search for small desserts turned up nothing.  So I picked up my wooden spoon, half a stick of butter and set out to recreate my favorite desserts in smaller pans.</p>
+                  <!-- subscribe -->
+                        <div class="subscribe-detail">
+                          <h3 class="subscribe-p">Subscribe to Dessert for Two!</h3>
+                          <p class="subscribe-p">Get updates on the latest posts and more from Dessert for Two straight to your inbox.</p>
+                          <form>
+                            <div class="row">
+                              <div class="form-group col-md-10">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                              </div>
+                              <div class="form-sbtn col-md-2">
+                                <div class="form-sbtn">
+                                  <button type="subscribe " class="btn">subscribe</button>
+                                </div>
+                              </div>               
+                              <div class="form-check mb-3">
+                                <label class="form-check-label">
+                                  <input class="form-check-input" type="checkbox" name="remember"> 
+                                  I consent to receiving emails and personalized ads.
+                                </label>
+                              </div>  
+                            </div>   
+                          </form>         
+                        </div>    
+                        <p class="aboutme">You're going to find a mix of recipes here, because I'm a mix of sorts. I was born and raised in Texas, but spent all of my 20s in California. Some days, I want <span class="recipeslink"> <a class="recipeslink"href="#">Texas Chocolate Sheet Cake</a></span> and <span class="recipeslink"> <a class="recipeslink"href="#">Sweet Tea Granita</a></span>; other days, I want lighter fare, like  <span class="recipeslink"> <a class="recipeslink"href="#">coconut sugar cookies</a></span>  or  <span class="recipeslink"> <a class="recipeslink"href="#">maple syrup sweetened cupcakes</a></span>.</p>
+                        <p class="aboutme">I indulge my cravings and scale down all sorts of recipes (even <span class="recipeslink"> <a class="recipeslink"href="#"> dinners for two</a></span>). I absolutely love to take requests, so email me if you have one (DessertForTwo AT gmail).</p>
+                        <p class="aboutme">For savory recipes, you can also find me over at <span class="recipeslink"> <a class="recipeslink"href="#"> BeanRecipes.com</a></span>.</p>
+                  <!-- aboutme-image -->
+                        <div class="aboutme-image">
+                          <img src="images/MoreDessertsForTwo-600x825.jpg" alt="MoreDessertsForTwo" >
+                        </div>
+                        <div class="advertisement"><div class="loader"></div>                    </div>
+  
+                        <p class="aboutme">If you haven't found me via one of my cookbooks, allow me to introduce them to you. My first book is called <span class="recipeslink"> <a class="recipeslink"href="#"> Dessert for Two</a></span>, and it was a labor of love that I am so proud to have produced. I spent years on the table of contents, ensuring every single type and flavor of dessert was represented in some way. The book has over 100 recipes for desserts for two.</p>
+                        <p class="aboutme">It landed on the best seller list, and received lots of press, for which I am so very grateful.</p>
+                        <div class="advertisement"><div class="loader"></div>                    </div>
+                        <div class="aboutme-image">
+                          <img src="images/dessertfortwo-cover-600x857.jpg" alt="MoreDessertsForTwo" >
+                        </div>
+                        <p class="aboutme">My second book is called <span class="recipeslink"> <a class="recipeslink"href="#"> Comfort & Joy: Cooking for Two</a></span>. While it does have a mini dessert section at the end, it mostly has savory recipes for two! In it, you can find breakfast, lunch, dinner, and comfort foods in small portions.
+                        </p>
+                        <div class="advertisement"><div class="loader"></div>                    </div>
+                        <div class="aboutme-image">
+                          <img src="images/comfortandjoy-cover-600x800.jpg" alt="MoreDessertsForTwo" >
+                        </div>
+                        <p class="aboutme">My third cookbook is called <span class="recipeslink"> <a class="recipeslink"href="#"> Sweet and Simple: Desserts for Two</a></span>. This cookbook is full of SIMPLE dessert recipes that require less than 10 ingredients or less! I'm not supposed to play favorites, but this cookbook has my whole heart.</p>
+                        <div class="advertisement"><div class="loader"></div>                    </div>
+                        <p class="aboutme">One of my favorite things about Sweet and Simple is that the chapters are divided by the pan needed to bake! If you have a muffin pan, turn to the muffin pan chapter to bake small desserts. If you have a quarter sheet pan, a 6" cake pan, ramekins--you can make every single recipe in that chapter with that one pan.</p>
+                        <div class="aboutme-image">
+                          <img src="images/homeamde-gooey-butter-cake-13-600x800.jpg" alt="MoreDessertsForTwo" >
+                        </div>
+                        <div class="advertisement"><div class="loader"></div>                    </div>
+                        <p class="aboutme">And yes, I even wrote a FOURTH COOKBOOK! My 4th book is entitled <span class="recipeslink"> <a class="recipeslink"href="#"> Dinner Just for Two</a></span>. It came out in 2019, and I'm sure saw me all over the country promoting this book! I was even invited to go on the Hallmark Channel to promote these perfect date night at home recipes. This book took nearly 3 years to produce, and the recipes in it are the ones I cook to the most.</p>
+                        <p class="aboutme">My favorite thing about this book is that it has a 'LEFTOVER INGREDIENT' section so that no food goes to waste. If you buy a bundle of fresh parsley, you can simply turn to the leftovers chapter to find a list of all of the recipes that use parsley.  The same is true for leftover ground meat, spices, buttermilk, etc. I want you to use what you have on hand, and make a delicious dinner for two.</p>
+                        <div class="advertisement"><div class="loader"></div>                    </div>
+                        <div class="aboutme-image">
+                          <img src="images/Dinner-Just-for-Two-Cover-360x480.jpg" alt="MoreDessertsForTwo" >
+                        </div>
+                        <p class="aboutme">I am so incredibly grateful that you are here, and I hope you and I can become cooking buddies. I started this blog over 6 years ago to document myself scaling down my Mama's recipes, and I cannot believe everything that has stemmed from it. I am so very blessed.</p>
+                        <div class="advertisement"><div class="loader"></div>                    </div>
+                        <p class="aboutme">You may have seen me on TODAY show and QVC a few times. The cooking for two movement is really taking off these days, as baby boomers are retiring and empty nests are popping up everywhere. I am so happy to be here!</p>
+                        <p class="heading-video">Even more info:</p>
+                        <p class="aboutme">You should know:  I am not a professionally trained chef.  I grew up in a family obsessed with food.  Every family get-together was (and still is) centered around what we’re eating.  Growing up, I spent a lot of time in my great Aunt Rose’s restaurant.  She owned a small hamburger cafe called Rose’s Bluebonnet Sandwich Shop.  Despite its very modest appearance, it was quite famous.  Don Henley even professed his love at one of his concerts for her burgers and dedicated a song to her food.  Mickey Mantle was a regular, too.  Her hamburgers were smashed to perfection on a griddle coated with grease.  She served soda in glass bottles only and bags of potato chips on the side.  If you got there early, there would often be a small plate of treats sitting just outside the kitchen: cream-cheese stuffed jalapenos, store-bought cookies and even bubble gum. Rose fed many people very well throughout her entire life, including the cast of Bonnie and Clyde while it was being filmed in Dallas.  In her earlier years, she smoked her own barbecue and served plate lunches to the people working in downtown Dallas.  My mom has memories of Rose’s arms being black with smoke.  I wasn’t around for that time, but considering people still talk about it, I know it was delicious.  Rose worked in her restaurant at the griddle until she died, just 8 years ago.  She closed up on a Saturday afternoon and passed away the following Monday. We still sit around and talk about what we wouldn’t do for just one more of Rose’s burgers.</p>
+                        <div class="advertisement"><div class="loader"></div>                    </div>
+                        <h1 class="wantmore">Want more of me?</h1>
+                        <p class="aboutme">You can find me on <span class="recipeslink"> <a class="recipeslink"href="#"> Facebook</a></span>, <span class="recipeslink"> <a class="recipeslink"href="#"> Pinterest</a></span>, and <span class="recipeslink"> <a class="recipeslink"href="#"> Instagram</a></span>.</p>
+                        <p class="aboutme">Have a question?  See the <span class="recipeslink"> <a class="recipeslink"href="#"> FAQ PAGE</a></span>, or shoot me an email at dessertfortwo AT gmail DOT com. Thanks! </p>
+                        <h4 class="disclosure">Disclosure:</h4>
+                        <p class="pdisclosure">A note about this site: We use Amazon affiliate links at times. We are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</p>
+                        <div class="advertisement"><div class="loader"></div>                    </div>   
+                      
+                      
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+                <div class="shortdetails-recommended">
+                  <div class="shortdetails-container">
+                    <div class="shortmyimage">
+                      <img src="images/HeadShot1200-300x300.jpg" alt="HeadShot" >
+                    </div>
+                    <div class="shortmytext">
+                      <p class="about-shorttext"><span class="hi"> Hi, I'm Christina!</span> I'm the author of 4 cookbooks all about cooking and baking for two. I have scaled down hundreds of recipes into smaller servings so you can enjoy your favorite dishes without the leftovers! Valentine's Day is my favorite holiday.</p>
+                      <p>You can also find her at <span><a class="findme" href="https://beanrecipes.com/">BeanRecipes</a></span>.</p>
+                      <p class="learnmore"> More about me &#8594</p>
+                    </div>
+                  </div> 
+                </div>
+              </div>  
+            
+                
+                <!--footer-->
+                <footer>
+                    <div class="backtotop">
+                    <a class="nav-link " aria-current="page" href="#">&uarr; Back to top</a>
+                    </div>
+                    <div class="privacy-signup">
+                    <div class="ppolicy">
+                        <p >PRIVACY POLICY</p>
+                    </div>
+                    <div class="signup">
+                        <p >SIGN UP! FOR EMAILS AND UPDATES</p>
+                    </div>
+                    <div class="faq">
+                        <p >FAQ</p>
+                    </div>
+                    </div>
+                    <div class="copyright">
+                    <p class="copy">COPYRIGHT © 2022<span class="crdft"> DESSERT FOR TWO</span> </p>
+                    </div>          
+                </footer> 
+
+
+                <script src="../index.js"></script>
+                <script>
+                    window.onload = function() {
+                        darklightmode()   
+                    }
+                </script>
+            </body>
+</html>
